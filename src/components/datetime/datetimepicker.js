@@ -16,7 +16,7 @@ const TEMPLATE = `<div class="dp-container">
     <div class="dp-item" data-role="year"></div>
     <div class="dp-item" data-role="month"></div>
     <div class="dp-item" data-role="day"></div>
-    <div class="dp-item" data-role="noon"></div>
+    <div class="dp-item" data-role="noon" style="flex: 2;"></div>
     <div class="dp-item" data-role="hour"></div>
     <div class="dp-item" data-role="minute"></div>
   </div>
