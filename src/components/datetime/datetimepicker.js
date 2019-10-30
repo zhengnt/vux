@@ -374,13 +374,6 @@ DatetimePicker.prototype = {
         const val = valueMap[list[0]] ? addZero(i) : i
         name = parseRow(config[type + 'Row'], val)
       }
-      if (type === 'year') {
-        name += '年'
-      }else if(type=='month'){
-        name += '月'
-      }else if(type=='day'){
-        name += '日'
-      }
       data.push({
         name: name,
         value: i
