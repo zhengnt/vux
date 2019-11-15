@@ -1,6 +1,7 @@
 import Scroller from '../picker/scroller'
 import { isToday, generateRange, each, trimZero, addZero, getMaxDay, parseRow, parseDate, getElement, toElement, removeElement } from './util'
 import { getYears, getMonths, getDays } from './makeData'
+import formater from './format'
 
 const isBrowser = typeof window === 'object'
 
@@ -54,6 +55,7 @@ const DEFAULT_CONFIG = {
   minuteList: null,
   startDate: null,
   endDate: null,
+  defaultShowDate: null,
   yearRow: '{value}',
   monthRow: '{value}',
   dayRow: '{value}',
@@ -138,6 +140,10 @@ function DatetimePicker (config) {
 
   if (config.defaultSelectedValue && !config.value) {
     self.config.value = config.defaultSelectedValue
+  }
+  
+  if (typeof this.config.defaultShowDate === 'string') {
+    self.value = self.value || formater(new Date(this.config.defaultShowDate.replace(/-/g, '/')),config.format)
   }
 
   if (typeof this.config.startDate === 'string') {
