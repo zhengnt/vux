@@ -56,7 +56,7 @@
     "validator": "^9.3.0",
     "vanilla-masker": "^1.2.0",
     "vux-blazy": "^1.6.4",
-    "vux-xscroll": "https://github.com/zhengnt/xscroll.git",
+    "vux-xscroll": "^3.1.10",
     "x-photoswipe": "^4.1.3-rc.1"
   },
   "devDependencies": {
