@@ -392,7 +392,7 @@ DatetimePicker.prototype = {
         value: 'AM'
       })
       data.push({
-        name: '下午(12:00-18:00)',
+        name: '下午(12:00-20:00)',
         value: 'PM'
       })
     }
